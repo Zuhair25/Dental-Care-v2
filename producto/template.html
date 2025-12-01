@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalles del Producto - Dental Care">
+    <title id="page-title">Producto - Dental Care</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .header-short {
+            min-height: 40vh;
+            justify-content: center;
+        }
+
+        .header-short .header-content {
+            margin-bottom: 0;
+        }
+
+        .product-detail-section {
+            padding: 80px 0;
+        }
+
+        .product-detail-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        .product-gallery {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+
+        .product-main-image {
+            margin-bottom: 20px;
+        }
+
+        .product-main-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .product-thumbnails {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .thumbnail {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .thumbnail:hover,
+        .thumbnail.active {
+            border-color: var(--primary-color);
+        }
+
+        .product-info-detail {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+
+        .product-title {
+            font-size: 2rem;
+            color: var(--text-color-dark);
+            margin-bottom: 20px;
+        }
+
+        .product-meta-info {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .product-brand-badge {
+            background: var(--bg-light);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+        }
+
+        .product-price-detail {
+            margin-bottom: 30px;
+        }
+
+        .original-price-large {
+            display: block;
+            text-decoration: line-through;
+            color: #999;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .final-price-large {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .discount-badge-large {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 1rem;
+            margin-left: 15px;
+        }
+
+        .product-description-detail,
+        .product-specs {
+            margin-bottom: 30px;
+        }
+
+        .product-specs ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-specs li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .quantity-selector label {
+            margin-right: 10px;
+        }
+
+        .qty-btn {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .qty-btn:hover {
+            background: var(--bg-light);
+            border-color: var(--primary-color);
+        }
+
+        #product-quantity {
+            width: 60px;
+            text-align: center;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .btn-add-cart-large {
+            width: 100%;
+            padding: 15px;
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-add-cart-large:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .related-products-section {
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .product-detail-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header header-short">
+        <div class="menu container">
+            <a href="../index.html" class="Logo">Dental<span class="logo-bold">Care</span></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <i class="fa-solid fa-bars menu-icono"></i>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../productos.html">Productos</a></li>
+                    <li><a href="../nosotros.html">Nosotros</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="../carrito.html" class="cart-icon-header" style="position: relative; color: white; font-size: 1.5rem; margin-left: 20px;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-badge" class="cart-badge" style="display: none; position: absolute; top: -8px; right: -8px; background: var(--secondary-color); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700;">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="product-detail-section">
+            <div class="product-detail-container">
+                <div id="product-gallery-container">
+                    <!-- Se llenará dinámicamente -->
+                </div>
+                <div id="product-info-container">
+                    <!-- Se llenará dinámicamente -->
+                </div>
+            </div>
+            <div id="related-products-container">
+                <!-- Se llenará dinámicamente -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-col">
+                <h3>Dental<span class="logo-bold">Care</span></h3>
+                <p>Tu socio confiable en materiales odontológicos.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/salomon.dental" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../productos.html">Productos</a></li>
+                    <li><a href="../nosotros.html">Nosotros</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                    <li><a href="../navegacion.html">Mapa del Sitio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Mendoza,+Argentina" target="_blank"
+                            style="color: inherit;"><i class="fa-solid fa-location-dot"></i> Mendoza, Argentina</a></li>
+                    <li><a href="https://wa.me/5492617231291" target="_blank" style="color: inherit;"><i
+                                class="fa-brands fa-whatsapp"></i> +54 9 2617231291</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dental Care. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/products-data.js"></script>
+    <script src="../js/cart-storage.js"></script>
+    <script src="../js/cart-system.js"></script>
+    <script src="../js/promotions-data.js"></script>
+    <script src="../js/catalog-engine.js"></script>
+    <script src="../js/product-view.js"></script>
+    <script>
+        // Actualizar título de página
+        document.addEventListener('DOMContentLoaded', function() {
+            const productId = window.location.pathname.split('/').pop().replace('.html', '');
+            if (productId && productId !== 'producto' && productId !== 'template') {
+                const product = getProductById(productId);
+                if (product) {
+                    document.getElementById('page-title').textContent = `${product.name} - Dental Care`;
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
+

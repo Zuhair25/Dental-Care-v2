@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página en Construcción - Dental Care">
+    <title>Página en Construcción - Dental Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .construction-container {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .tooth-illustration {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto 40px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .construction-title {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .construction-message {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+
+        .construction-info {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header header-short">
+        <div class="menu container">
+            <a href="index.html" class="Logo">Dental<span class="logo-bold">Care</span></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <i class="fa-solid fa-bars menu-icono"></i>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="construction-container">
+            <div class="tooth-illustration">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Diente principal -->
+                    <ellipse cx="100" cy="120" rx="60" ry="50" fill="#f0f0f0" stroke="#649AF8" stroke-width="3"/>
+                    <ellipse cx="100" cy="100" rx="50" ry="40" fill="#ffffff" stroke="#649AF8" stroke-width="2"/>
+                    
+                    <!-- Raíces -->
+                    <rect x="85" y="160" width="15" height="30" rx="7" fill="#e0e0e0" stroke="#649AF8" stroke-width="2"/>
+                    <rect x="100" y="160" width="15" height="30" rx="7" fill="#e0e0e0" stroke="#649AF8" stroke-width="2"/>
+                    
+                    <!-- Herramientas de mantenimiento -->
+                    <!-- Llave inglesa -->
+                    <g transform="translate(30, 40) rotate(-20)">
+                        <rect x="0" y="0" width="25" height="8" rx="4" fill="#888" stroke="#555" stroke-width="1"/>
+                        <rect x="20" y="-5" width="8" height="18" rx="4" fill="#888" stroke="#555" stroke-width="1"/>
+                    </g>
+                    
+                    <!-- Tornillo -->
+                    <g transform="translate(150, 50)">
+                        <circle cx="0" cy="0" r="8" fill="#888" stroke="#555" stroke-width="1"/>
+                        <line x1="-8" y1="0" x2="8" y2="0" stroke="#555" stroke-width="2"/>
+                        <line x1="0" y1="-8" x2="0" y2="8" stroke="#555" stroke-width="2"/>
+                        <rect x="-2" y="8" width="4" height="12" fill="#888" stroke="#555" stroke-width="1"/>
+                    </g>
+                    
+                    <!-- Destornillador -->
+                    <g transform="translate(160, 80) rotate(45)">
+                        <rect x="-3" y="0" width="6" height="25" fill="#666" stroke="#444" stroke-width="1"/>
+                        <rect x="-5" y="0" width="10" height="8" fill="#888" stroke="#444" stroke-width="1"/>
+                    </g>
+                    
+                    <!-- Indicador de trabajo en progreso -->
+                    <circle cx="100" cy="100" r="5" fill="#00b4d8">
+                        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    
+                    <!-- Líneas de construcción -->
+                    <line x1="50" y1="80" x2="150" y2="80" stroke="#00b4d8" stroke-width="2" stroke-dasharray="5,5">
+                        <animate attributeName="stroke-dashoffset" values="0;10" dur="1s" repeatCount="indefinite"/>
+                    </line>
+                </svg>
+            </div>
+
+            <h1 class="construction-title">Página en Construcción</h1>
+            <p class="construction-message">
+                Estamos trabajando en mejorar esta sección para ofrecerte una mejor experiencia. 
+                El sistema de pago estará disponible próximamente.
+            </p>
+
+            <div class="construction-info">
+                <h3 style="margin-bottom: 15px; color: var(--primary-color);">
+                    <i class="fa-solid fa-info-circle"></i> Información
+                </h3>
+                <p style="margin-bottom: 20px; color: #666;">
+                    Mientras tanto, puedes contactarnos directamente para realizar tu pedido:
+                </p>
+                <div style="text-align: left;">
+                    <p style="margin-bottom: 10px;">
+                        <i class="fa-brands fa-whatsapp" style="color: var(--secondary-color);"></i>
+                        <a href="https://wa.me/5492617231291" target="_blank" style="color: inherit; text-decoration: none;">
+                            +54 9 2617231291
+                        </a>
+                    </p>
+                    <p style="margin-bottom: 10px;">
+                        <i class="fa-solid fa-envelope" style="color: var(--secondary-color);"></i>
+                        <a href="contacto.html" style="color: inherit; text-decoration: none;">
+                            Formulario de Contacto
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <a href="index.html" class="btn-1" style="margin-right: 15px;">
+                    <i class="fa-solid fa-home"></i> Volver al Inicio
+                </a>
+                <a href="productos.html" class="btn-1">
+                    <i class="fa-solid fa-box"></i> Ver Productos
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-col">
+                <h3>Dental<span class="logo-bold">Care</span></h3>
+                <p>Tu socio confiable en materiales odontológicos.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/salomon.dental" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="navegacion.html">Mapa del Sitio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Mendoza,+Argentina" target="_blank"
+                            style="color: inherit;"><i class="fa-solid fa-location-dot"></i> Mendoza, Argentina</a></li>
+                    <li><a href="https://wa.me/5492617231291" target="_blank" style="color: inherit;"><i
+                                class="fa-brands fa-whatsapp"></i> +54 9 2617231291</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dental Care. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+

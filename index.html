@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Materiales odontológicos de alta calidad para profesionales. Resinas, instrumental y equipos dentales.">
+    <title>Dental Care - Materiales Odontológicos Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="Logo">Dental<span class="logo-bold">Care</span></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <i class="fa-solid fa-bars menu-icono"></i>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="carrito.html" class="cart-icon-header" style="position: relative; color: white; font-size: 1.5rem; margin-left: 20px; text-decoration: none;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-badge" class="cart-badge" style="display: none; position: absolute; top: -8px; right: -8px; background: var(--secondary-color); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700;">0</span>
+            </a>
+        </div>
+        <div class="banner-swiper swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="banner-slide" style="background-image: url('images/bg.jpg');">
+                        <div class="header-content container">
+                            <h1>Excelencia en Materiales Odontológicos</h1>
+                            <p>
+                                Proveemos a los profesionales de la salud dental con los mejores insumos y tecnología de vanguardia.
+                                Calidad garantizada para sonrisas perfectas.
+                            </p>
+                            <a href="productos.html" class="btn-1">Ver Catálogo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner-slide" style="background-image: url('images/bg2.jpg');">
+                        <div class="header-content container">
+                            <h1>Innovación y Calidad</h1>
+                            <p>
+                                Materiales de última generación para profesionales que buscan la excelencia en cada tratamiento.
+                            </p>
+                            <a href="categorias/odontologia-general.html" class="btn-1">Explorar Categorías</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner-slide" style="background-image: url('images/bg.png');">
+                        <div class="header-content container">
+                            <h1>Tu Socio de Confianza</h1>
+                            <p>
+                                Más de 15 años acompañando a odontólogos en su práctica diaria con productos premium.
+                            </p>
+                            <a href="nosotros.html" class="btn-1">Conoce Más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="categories-section container">
+            <div class="categories-content">
+                <h2>Nuestras Categorías</h2>
+                <p class="txt-p">
+                    Explora nuestra amplia gama de productos organizados por especialidad. Encuentra todo lo que necesitas 
+                    para tu consultorio en un solo lugar.
+                </p>
+
+                <div class="categories-grid">
+                    <a href="categorias/odontologia-general.html" class="category-card">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-tooth"></i>
+                        </div>
+                        <h3>Odontología General</h3>
+                        <p>Insumos básicos y avanzados para el día a día en tu clínica.</p>
+                    </a>
+                    <a href="categorias/instrumental.html" class="category-card">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                        <h3>Instrumental</h3>
+                        <p>Acero quirúrgico de precisión para todos tus procedimientos.</p>
+                    </a>
+                    <a href="categorias/bioseguridad.html" class="category-card">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>Bioseguridad</h3>
+                        <p>Protección y seguridad para tu consultorio y pacientes.</p>
+                    </a>
+                    <a href="categorias/equipamiento.html" class="category-card">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-chair"></i>
+                        </div>
+                        <h3>Equipamiento</h3>
+                        <p>Sillones y unidades dentales de última generación.</p>
+                    </a>
+                    <a href="categorias/ortodoncia.html" class="category-card">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3>Ortodoncia</h3>
+                        <p>Materiales y brackets para sonrisas perfectas.</p>
+                    </a>
+                    <a href="categorias/endodoncia.html" class="category-card">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-microscope"></i>
+                        </div>
+                        <h3>Endodoncia</h3>
+                        <p>Tecnología precisa para tratamientos de conducto exitosos.</p>
+                    </a>
+                    <a href="categorias/cirugia.html" class="category-card">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-kit-medical"></i>
+                        </div>
+                        <h3>Cirugía</h3>
+                        <p>Materiales y equipos para procedimientos quirúrgicos.</p>
+                    </a>
+                    <a href="categorias/implantes.html" class="category-card">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-screw"></i>
+                        </div>
+                        <h3>Implantes</h3>
+                        <p>Sistemas de implantes de última generación.</p>
+                    </a>
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="productos.html" class="btn-1">Ver todos los productos</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="ofertas-section">
+            <div class="container">
+                <h2>Ofertas Especiales</h2>
+                <p class="txt-p" style="text-align: center; margin-bottom: 40px;">
+                    Aprovecha nuestras promociones y descuentos especiales en productos seleccionados.
+                </p>
+                <div class="ofertas-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="oferta-card">
+                                <img src="images/i1.svg" alt="Oferta Resinas">
+                                <div class="oferta-badge">-20%</div>
+                                <h3>Resinas Compuestas</h3>
+                                <p class="precio-original">$45.00</p>
+                                <p class="precio-oferta">$36.00</p>
+                                <a href="productos.html" class="btn-1">Ver Oferta</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="oferta-card">
+                                <img src="images/i2.svg" alt="Oferta Instrumental">
+                                <div class="oferta-badge">-15%</div>
+                                <h3>Kit Exploración</h3>
+                                <p class="precio-original">$25.50</p>
+                                <p class="precio-oferta">$21.68</p>
+                                <a href="productos.html" class="btn-1">Ver Oferta</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="oferta-card">
+                                <img src="images/i3.svg" alt="Oferta Equipamiento">
+                                <div class="oferta-badge">-10%</div>
+                                <h3>Lámpara Fotocurado</h3>
+                                <p class="precio-original">$120.00</p>
+                                <p class="precio-oferta">$108.00</p>
+                                <a href="productos.html" class="btn-1">Ver Oferta</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="oferta-card">
+                                <img src="images/c1.webp" alt="Oferta Blanqueamiento">
+                                <div class="oferta-badge">-25%</div>
+                                <h3>Kit Blanqueamiento</h3>
+                                <p class="precio-original">$85.00</p>
+                                <p class="precio-oferta">$63.75</p>
+                                <a href="productos.html" class="btn-1">Ver Oferta</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="ofertas.html" class="btn-1">Ver todas las ofertas</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="reseñas-section">
+            <div class="container">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <p class="txt-p" style="text-align: center; margin-bottom: 40px;">
+                    Profesionales de la odontología confían en nosotros para sus materiales y equipos.
+                </p>
+                <div class="reseñas-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="reseña-card">
+                                <div class="reseña-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="reseña-text">
+                                    "Excelente calidad en todos los productos. El servicio es rápido y el asesoramiento profesional. 
+                                    Llevo años trabajando con Dental Care y siempre superan mis expectativas."
+                                </p>
+                                <div class="reseña-author">
+                                    <strong>Dr. Carlos Mendoza</strong>
+                                    <span>Odontólogo General</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reseña-card">
+                                <div class="reseña-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="reseña-text">
+                                    "Los materiales de endodoncia que ofrecen son de primera calidad. Mis tratamientos han mejorado 
+                                    significativamente desde que trabajo con ellos."
+                                </p>
+                                <div class="reseña-author">
+                                    <strong>Dra. Ana García</strong>
+                                    <span>Endodoncista</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reseña-card">
+                                <div class="reseña-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="reseña-text">
+                                    "El instrumental que compré es excelente. Buena relación calidad-precio y entrega puntual. 
+                                    Definitivamente recomiendo Dental Care."
+                                </p>
+                                <div class="reseña-author">
+                                    <strong>Dr. Roberto Silva</strong>
+                                    <span>Cirujano Oral</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reseña-card">
+                                <div class="reseña-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="reseña-text">
+                                    "Equipamiento de última generación y atención personalizada. Han sido fundamentales en el 
+                                    crecimiento de mi consultorio."
+                                </p>
+                                <div class="reseña-author">
+                                    <strong>Dra. María López</strong>
+                                    <span>Ortodoncista</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="reseñas.html" class="btn-1">Ver todas las reseñas</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section container">
+            <div class="info-text">
+                <h2>Innovación Constante</h2>
+                <p>
+                    Nos mantenemos a la vanguardia de la tecnología dental, trayendo al mercado los últimos avances
+                    en biomateriales y equipamiento digital. Tu éxito profesional es nuestra prioridad.
+                </p>
+                <a href="contacto.html" class="btn-1">Contáctanos</a>
+            </div>
+            <div class="info-image"></div>
+        </section>
+
+        <section class="blog container">
+            <h2>Novedades y Blog</h2>
+            <p class="blog-intro">Mantente actualizado con las últimas tendencias en odontología.</p>
+
+            <div class="blog-content">
+                <article class="blog-card">
+                    <div class="blog-img-wrapper">
+                        <img src="images/blog1.jpg" alt="Avances en resinas dentales">
+                    </div>
+                    <div class="blog-text">
+                        <h3>Nuevas Resinas 2024</h3>
+                        <p>Descubre las propiedades de las nuevas resinas nanohíbridas.</p>
+                        <a href="#" class="read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img-wrapper">
+                        <img src="images/blog2.jpg" alt="Tecnología en endodoncia">
+                    </div>
+                    <div class="blog-text">
+                        <h3>Endodoncia Mecanizada</h3>
+                        <p>Cómo mejorar la eficiencia en tus tratamientos de conducto.</p>
+                        <a href="#" class="read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img-wrapper">
+                        <img src="images/blog3.jpg" alt="Ergonomía dental">
+                    </div>
+                    <div class="blog-text">
+                        <h3>Ergonomía en el Consultorio</h3>
+                        <p>Tips para cuidar tu postura durante largas jornadas.</p>
+                        <a href="#" class="read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-col">
+                <h3>Dental<span class="logo-bold">Care</span></h3>
+                <p>Tu socio confiable en materiales odontológicos.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/salomon.dental" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="navegacion.html">Mapa del Sitio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Mendoza,+Argentina" target="_blank"
+                            style="color: inherit;"><i class="fa-solid fa-location-dot"></i> Mendoza, Argentina</a></li>
+                    <li><a href="https://wa.me/5492617231291" target="_blank" style="color: inherit;"><i
+                                class="fa-brands fa-whatsapp"></i> +54 9 2617231291</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dental Care. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/products-data.js"></script>
+    <script src="js/cart-storage.js"></script>
+    <script src="js/cart-system.js"></script>
+    <script>
+        CartSystem.updateCartUI();
+    </script>
+
+</body>
+
+</html>

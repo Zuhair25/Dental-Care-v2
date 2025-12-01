@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ofertas y Promociones - Descuentos especiales en materiales odontológicos.">
+    <title>Ofertas - Dental Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .header-short {
+            min-height: 40vh;
+            justify-content: center;
+        }
+
+        .header-short .header-content {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header header-short">
+        <div class="menu container">
+            <a href="index.html" class="Logo">Dental<span class="logo-bold">Care</span></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <i class="fa-solid fa-bars menu-icono"></i>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="carrito.html" class="cart-icon-header" style="position: relative; color: white; font-size: 1.5rem; margin-left: 20px; text-decoration: none;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-badge" class="cart-badge" style="display: none; position: absolute; top: -8px; right: -8px; background: var(--secondary-color); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700;">0</span>
+            </a>
+        </div>
+        <div class="header-content container">
+            <h1>Ofertas Especiales</h1>
+            <p>Aprovecha nuestras promociones y descuentos exclusivos</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="ofertas-page" style="padding: 80px 0;">
+            <div class="ofertas-intro" style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;">Promociones del Mes</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 800px; margin: 0 auto;">
+                    Descubre nuestras ofertas especiales en productos seleccionados. Descuentos exclusivos para profesionales 
+                    de la odontología.
+                </p>
+            </div>
+
+            <div class="ofertas-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                <div class="oferta-card-page" style="background: white; padding: 25px; border-radius: 15px; box-shadow: var(--shadow); text-align: center; position: relative;">
+                    <div class="oferta-badge" style="position: absolute; top: 15px; right: 15px; background: var(--secondary-color); color: white; padding: 8px 15px; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">-20%</div>
+                    <img src="images/i1.svg" alt="Resinas" style="width: 120px; height: 120px; margin: 0 auto 20px; object-fit: contain;">
+                    <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: var(--text-color-dark);">Resinas Compuestas</h3>
+                    <p style="color: #666; margin-bottom: 15px;">Nanohíbrida para restauraciones estéticas de alta durabilidad.</p>
+                    <p class="precio-original" style="text-decoration: line-through; color: #999; font-size: 1rem; margin-bottom: 5px;">$45.00</p>
+                    <p class="precio-oferta" style="font-size: 1.8rem; color: var(--primary-color); font-weight: 700; margin-bottom: 20px;">$36.00</p>
+                    <a href="productos.html" class="btn-1" style="padding: 10px 30px; font-size: 0.9rem;">Ver Producto</a>
+                </div>
+
+                <div class="oferta-card-page" style="background: white; padding: 25px; border-radius: 15px; box-shadow: var(--shadow); text-align: center; position: relative;">
+                    <div class="oferta-badge" style="position: absolute; top: 15px; right: 15px; background: var(--secondary-color); color: white; padding: 8px 15px; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">-15%</div>
+                    <img src="images/i2.svg" alt="Instrumental" style="width: 120px; height: 120px; margin: 0 auto 20px; object-fit: contain;">
+                    <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: var(--text-color-dark);">Kit Exploración</h3>
+                    <p style="color: #666; margin-bottom: 15px;">Set básico de 3 piezas en acero inoxidable quirúrgico.</p>
+                    <p class="precio-original" style="text-decoration: line-through; color: #999; font-size: 1rem; margin-bottom: 5px;">$25.50</p>
+                    <p class="precio-oferta" style="font-size: 1.8rem; color: var(--primary-color); font-weight: 700; margin-bottom: 20px;">$21.68</p>
+                    <a href="productos.html" class="btn-1" style="padding: 10px 30px; font-size: 0.9rem;">Ver Producto</a>
+                </div>
+
+                <div class="oferta-card-page" style="background: white; padding: 25px; border-radius: 15px; box-shadow: var(--shadow); text-align: center; position: relative;">
+                    <div class="oferta-badge" style="position: absolute; top: 15px; right: 15px; background: var(--secondary-color); color: white; padding: 8px 15px; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">-10%</div>
+                    <img src="images/i3.svg" alt="Equipamiento" style="width: 120px; height: 120px; margin: 0 auto 20px; object-fit: contain;">
+                    <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: var(--text-color-dark);">Lámpara de Fotocurado</h3>
+                    <p style="color: #666; margin-bottom: 15px;">Alta potencia y diseño ergonómico inalámbrico.</p>
+                    <p class="precio-original" style="text-decoration: line-through; color: #999; font-size: 1rem; margin-bottom: 5px;">$120.00</p>
+                    <p class="precio-oferta" style="font-size: 1.8rem; color: var(--primary-color); font-weight: 700; margin-bottom: 20px;">$108.00</p>
+                    <a href="productos.html" class="btn-1" style="padding: 10px 30px; font-size: 0.9rem;">Ver Producto</a>
+                </div>
+
+                <div class="oferta-card-page" style="background: white; padding: 25px; border-radius: 15px; box-shadow: var(--shadow); text-align: center; position: relative;">
+                    <div class="oferta-badge" style="position: absolute; top: 15px; right: 15px; background: var(--secondary-color); color: white; padding: 8px 15px; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">-25%</div>
+                    <img src="images/c1.webp" alt="Blanqueamiento" style="width: 120px; height: 120px; margin: 0 auto 20px; object-fit: contain;">
+                    <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: var(--text-color-dark);">Kit Blanqueamiento</h3>
+                    <p style="color: #666; margin-bottom: 15px;">Sistema profesional para uso en consultorio.</p>
+                    <p class="precio-original" style="text-decoration: line-through; color: #999; font-size: 1rem; margin-bottom: 5px;">$85.00</p>
+                    <p class="precio-oferta" style="font-size: 1.8rem; color: var(--primary-color); font-weight: 700; margin-bottom: 20px;">$63.75</p>
+                    <a href="productos.html" class="btn-1" style="padding: 10px 30px; font-size: 0.9rem;">Ver Producto</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 40px; background: var(--bg-light); border-radius: 20px;">
+                <h3 style="font-size: 1.8rem; color: var(--primary-color); margin-bottom: 20px;">¿Buscas algo específico?</h3>
+                <p style="color: #666; margin-bottom: 30px;">Contáctanos para conocer nuestras ofertas personalizadas y descuentos por volumen.</p>
+                <a href="contacto.html" class="btn-1">Contáctanos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-col">
+                <h3>Dental<span class="logo-bold">Care</span></h3>
+                <p>Tu socio confiable en materiales odontológicos.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/salomon.dental" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="navegacion.html">Mapa del Sitio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Mendoza,+Argentina" target="_blank"
+                            style="color: inherit;"><i class="fa-solid fa-location-dot"></i> Mendoza, Argentina</a></li>
+                    <li><a href="https://wa.me/5492617231291" target="_blank" style="color: inherit;"><i
+                                class="fa-brands fa-whatsapp"></i> +54 9 2617231291</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dental Care. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/cart-storage.js"></script>
+    <script src="js/cart-system.js"></script>
+    <script>
+        CartSystem.updateCartUI();
+    </script>
+
+</body>
+
+</html>
+
+

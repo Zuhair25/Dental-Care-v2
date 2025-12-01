@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contáctanos para cualquier consulta sobre nuestros materiales odontológicos.">
+    <title>Contacto - Dental Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .header-short {
+            min-height: 40vh;
+            justify-content: center;
+        }
+
+        .header-short .header-content {
+            margin-bottom: 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-color-dark);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--secondary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 180, 216, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header header-short">
+        <div class="menu container">
+            <a href="index.html" class="Logo">Dental<span class="logo-bold">Care</span></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <i class="fa-solid fa-bars menu-icono"></i>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="carrito.html" class="cart-icon-header" style="position: relative; color: white; font-size: 1.5rem; margin-left: 20px; text-decoration: none;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-badge" class="cart-badge" style="display: none; position: absolute; top: -8px; right: -8px; background: var(--secondary-color); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700;">0</span>
+            </a>
+        </div>
+        <div class="header-content container">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para resolver tus dudas</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-section" style="padding: 80px 0;">
+            <div class="contact-wrapper" style="display: flex; gap: 50px; flex-wrap: wrap;">
+
+                <div class="contact-info"
+                    style="flex: 1; min-width: 300px; background: var(--primary-color); color: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow);">
+                    <h3 style="font-size: 2rem; margin-bottom: 30px; color: white;">Información</h3>
+                    <div style="margin-bottom: 25px; display: flex; align-items: center; gap: 15px;">
+                        <i class="fa-solid fa-location-dot" style="font-size: 20px;"></i>
+                        <p>Mendoza, Argentina</p>
+                    </div>
+                    <div style="margin-bottom: 25px; display: flex; align-items: center; gap: 15px;">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 20px;"></i>
+                        <p>+54 9 2617231291</p>
+                    </div>
+                    <div style="margin-top: 50px;">
+                        <h4 style="margin-bottom: 15px; color: white;">Síguenos</h4>
+                        <div class="socials">
+                            <a href="https://www.instagram.com/salomon.dental" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form"
+                    style="flex: 1.5; min-width: 300px; background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow);">
+                    <h3 style="font-size: 2rem; color: var(--text-color-dark); margin-bottom: 30px;">Envíanos un
+                        mensaje
+                    </h3>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="¿En qué podemos ayudarte?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-1" style="border: none; cursor: pointer; width: 100%;">Enviar
+                            Mensaje</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-col">
+                <h3>Dental<span class="logo-bold">Care</span></h3>
+                <p>Tu socio confiable en materiales odontológicos.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/salomon.dental" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="navegacion.html">Mapa del Sitio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Mendoza,+Argentina" target="_blank"
+                            style="color: inherit;"><i class="fa-solid fa-location-dot"></i>
+                            Mendoza, Argentina</a></li>
+                    <li><a href="https://wa.me/5492617231291" target="_blank" style="color: inherit;"><i
+                                class="fa-brands fa-whatsapp"></i> +54 9 2617231291</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dental Care. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/cart-storage.js"></script>
+    <script src="js/cart-system.js"></script>
+    <script>
+        CartSystem.updateCartUI();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Odontología General - Materiales e insumos para tratamientos dentales generales.">
+    <title>Odontología General - Dental Care</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .header-short {
+            min-height: 40vh;
+            justify-content: center;
+        }
+
+        .header-short .header-content {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header header-short">
+        <div class="menu container">
+            <a href="../index.html" class="Logo">Dental<span class="logo-bold">Care</span></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <i class="fa-solid fa-bars menu-icono"></i>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../productos.html">Productos</a></li>
+                    <li><a href="../nosotros.html">Nosotros</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="../carrito.html" class="cart-icon-header" style="position: relative; color: white; font-size: 1.5rem; margin-left: 20px; text-decoration: none;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-badge" class="cart-badge" style="display: none; position: absolute; top: -8px; right: -8px; background: var(--secondary-color); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700;">0</span>
+            </a>
+        </div>
+        <div class="header-content container">
+            <h1>Odontología General</h1>
+            <p>Insumos básicos y avanzados para el día a día en tu clínica</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="category-section" style="padding: 80px 0;">
+            <div class="category-intro" style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;">Odontología General</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 800px; margin: 0 auto;">
+                    Ofrecemos una amplia gama de materiales e insumos esenciales para tratamientos dentales generales. 
+                    Desde resinas compuestas hasta materiales de restauración, todo lo que necesitas para tu práctica diaria.
+                </p>
+            </div>
+
+            <div id="products-container" class="category-products" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px;">
+                <!-- Los productos se cargarán dinámicamente con JavaScript -->
+            </div>
+
+            <div class="category-info" style="background: var(--bg-light); padding: 40px; border-radius: 20px; margin-top: 40px;">
+                <h3 style="font-size: 1.8rem; color: var(--primary-color); margin-bottom: 20px;">¿Por qué elegir nuestros productos de Odontología General?</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 15px; display: flex; align-items: start; gap: 15px;">
+                        <i class="fa-solid fa-check-circle" style="color: var(--secondary-color); font-size: 20px; margin-top: 3px;"></i>
+                        <span style="color: #555; font-size: 1rem;">Materiales certificados y de calidad premium</span>
+                    </li>
+                    <li style="margin-bottom: 15px; display: flex; align-items: start; gap: 15px;">
+                        <i class="fa-solid fa-check-circle" style="color: var(--secondary-color); font-size: 20px; margin-top: 3px;"></i>
+                        <span style="color: #555; font-size: 1rem;">Amplia variedad para cubrir todas tus necesidades</span>
+                    </li>
+                    <li style="margin-bottom: 15px; display: flex; align-items: start; gap: 15px;">
+                        <i class="fa-solid fa-check-circle" style="color: var(--secondary-color); font-size: 20px; margin-top: 3px;"></i>
+                        <span style="color: #555; font-size: 1rem;">Asesoramiento profesional personalizado</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-col">
+                <h3>Dental<span class="logo-bold">Care</span></h3>
+                <p>Tu socio confiable en materiales odontológicos.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/salomon.dental" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../productos.html">Productos</a></li>
+                    <li><a href="../nosotros.html">Nosotros</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                    <li><a href="../navegacion.html">Mapa del Sitio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Mendoza,+Argentina" target="_blank"
+                            style="color: inherit;"><i class="fa-solid fa-location-dot"></i> Mendoza, Argentina</a></li>
+                    <li><a href="https://wa.me/5492617231291" target="_blank" style="color: inherit;"><i
+                                class="fa-brands fa-whatsapp"></i> +54 9 2617231291</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dental Care. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/products-data.js"></script>
+    <script src="../js/catalog-engine.js"></script>
+    <script src="../js/cart-storage.js"></script>
+    <script src="../js/cart-system.js"></script>
+    <script src="../js/promotions-data.js"></script>
+    <script src="../js/promotions-engine.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            CatalogEngine.renderProductsByCategory('odontologia-general', 'products-container', true);
+            setTimeout(() => {
+                PromotionsEngine.applyPromotionsToProducts();
+            }, 100);
+            CartSystem.updateCartUI();
+        });
+    </script>
+
+</body>
+
+</html>
+
+

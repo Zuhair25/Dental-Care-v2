@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mapa de Navegación - Explora todas las páginas y rutas del sitio Dental Care.">
+    <title>Mapa del Sitio - Dental Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .header-short {
+            min-height: 40vh;
+            justify-content: center;
+        }
+
+        .header-short .header-content {
+            margin-bottom: 0;
+        }
+
+        .sitemap-container {
+            padding: 80px 0;
+        }
+
+        .sitemap-section {
+            margin-bottom: 40px;
+        }
+
+        .sitemap-section h3 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .sitemap-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .sitemap-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            text-decoration: none;
+            color: var(--text-color-dark);
+        }
+
+        .sitemap-link:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            color: var(--primary-color);
+        }
+
+        .sitemap-link i {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+        }
+
+        .sitemap-subsection {
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+        .sitemap-subsection .sitemap-link {
+            font-size: 0.95rem;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header header-short">
+        <div class="menu container">
+            <a href="index.html" class="Logo">Dental<span class="logo-bold">Care</span></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <i class="fa-solid fa-bars menu-icono"></i>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="carrito.html" class="cart-icon-header" style="position: relative; color: white; font-size: 1.5rem; margin-left: 20px; text-decoration: none;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-badge" class="cart-badge" style="display: none; position: absolute; top: -8px; right: -8px; background: var(--secondary-color); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700;">0</span>
+            </a>
+        </div>
+        <div class="header-content container">
+            <h1>Mapa del Sitio</h1>
+            <p>Explora todas las páginas y secciones disponibles</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="sitemap-container">
+            <div class="sitemap-intro" style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;">Navegación Completa</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 800px; margin: 0 auto;">
+                    Encuentra rápidamente cualquier página o sección del sitio. Todas las rutas están organizadas por categorías 
+                    para facilitar tu navegación.
+                </p>
+            </div>
+
+            <!-- Páginas Principales -->
+            <div class="sitemap-section">
+                <h3><i class="fa-solid fa-home"></i> Páginas Principales</h3>
+                <div class="sitemap-links" id="main-pages">
+                    <!-- Se llenará automáticamente con JavaScript -->
+                </div>
+            </div>
+
+            <!-- Categorías -->
+            <div class="sitemap-section">
+                <h3><i class="fa-solid fa-folder"></i> Categorías de Productos</h3>
+                <div class="sitemap-links" id="categories">
+                    <!-- Se llenará automáticamente con JavaScript -->
+                </div>
+            </div>
+
+            <!-- Páginas Adicionales -->
+            <div class="sitemap-section">
+                <h3><i class="fa-solid fa-star"></i> Páginas Adicionales</h3>
+                <div class="sitemap-links" id="additional-pages">
+                    <!-- Se llenará automáticamente con JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-col">
+                <h3>Dental<span class="logo-bold">Care</span></h3>
+                <p>Tu socio confiable en materiales odontológicos.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/salomon.dental" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="navegacion.html">Mapa del Sitio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Mendoza,+Argentina" target="_blank"
+                            style="color: inherit;"><i class="fa-solid fa-location-dot"></i> Mendoza, Argentina</a></li>
+                    <li><a href="https://wa.me/5492617231291" target="_blank" style="color: inherit;"><i
+                                class="fa-brands fa-whatsapp"></i> +54 9 2617231291</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dental Care. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/products-data.js"></script>
+    <script src="js/cart-storage.js"></script>
+    <script src="js/cart-system.js"></script>
+    <script>
+        // Definición de todas las rutas del sitio
+        const siteRoutes = {
+            mainPages: [
+                { url: 'index.html', title: 'Inicio', icon: 'fa-home' },
+                { url: 'productos.html', title: 'Productos', icon: 'fa-box' },
+                { url: 'nosotros.html', title: 'Nosotros', icon: 'fa-users' },
+                { url: 'contacto.html', title: 'Contacto', icon: 'fa-envelope' },
+                { url: 'ayuda.html', title: 'Ayuda', icon: 'fa-question-circle' }
+            ],
+            categories: [
+                { url: 'categorias/odontologia-general.html', title: 'Odontología General', icon: 'fa-tooth' },
+                { url: 'categorias/instrumental.html', title: 'Instrumental', icon: 'fa-scissors' },
+                { url: 'categorias/bioseguridad.html', title: 'Bioseguridad', icon: 'fa-shield-halved' },
+                { url: 'categorias/equipamiento.html', title: 'Equipamiento', icon: 'fa-chair' },
+                { url: 'categorias/ortodoncia.html', title: 'Ortodoncia', icon: 'fa-gem' },
+                { url: 'categorias/endodoncia.html', title: 'Endodoncia', icon: 'fa-microscope' },
+                { url: 'categorias/cirugia.html', title: 'Cirugía', icon: 'fa-kit-medical' },
+                { url: 'categorias/implantes.html', title: 'Implantes', icon: 'fa-screw' }
+            ],
+            additionalPages: [
+                { url: 'ofertas.html', title: 'Ofertas', icon: 'fa-tag' },
+                { url: 'reseñas.html', title: 'Reseñas', icon: 'fa-star' },
+                { url: 'destacados.html', title: 'Productos Destacados', icon: 'fa-fire' },
+                { url: 'promociones.html', title: 'Promociones', icon: 'fa-percent' },
+                { url: 'carrito.html', title: 'Carrito de Compras', icon: 'fa-cart-shopping' },
+                { url: 'checkout.html', title: 'Checkout', icon: 'fa-credit-card' },
+                { url: 'en-construccion.html', title: 'En Construcción', icon: 'fa-tools' },
+                { url: 'navegacion.html', title: 'Mapa del Sitio', icon: 'fa-sitemap' }
+            ],
+            productPages: []
+        };
+
+        // Generar rutas de productos dinámicamente desde la base de datos
+        function generateProductRoutes() {
+            if (typeof PRODUCTS_DATABASE !== 'undefined') {
+                const allProducts = [];
+                for (const category in PRODUCTS_DATABASE) {
+                    PRODUCTS_DATABASE[category].forEach(product => {
+                        allProducts.push({
+                            url: `producto/${product.id}.html`,
+                            title: product.name,
+                            icon: 'fa-box',
+                            category: product.category
+                        });
+                    });
+                }
+                siteRoutes.productPages = allProducts;
+            }
+        }
+
+        // Función para crear enlaces
+        function createLink(route) {
+            const link = document.createElement('a');
+            link.href = route.url;
+            link.className = 'sitemap-link';
+            link.innerHTML = `
+                <i class="fa-solid ${route.icon}"></i>
+                <span>${route.title}</span>
+            `;
+            return link;
+        }
+
+        // Función para renderizar rutas
+        function renderRoutes() {
+            // Páginas principales
+            const mainPagesContainer = document.getElementById('main-pages');
+            siteRoutes.mainPages.forEach(route => {
+                mainPagesContainer.appendChild(createLink(route));
+            });
+
+            // Categorías
+            const categoriesContainer = document.getElementById('categories');
+            siteRoutes.categories.forEach(route => {
+                categoriesContainer.appendChild(createLink(route));
+            });
+
+            // Páginas adicionales
+            const additionalPagesContainer = document.getElementById('additional-pages');
+            siteRoutes.additionalPages.forEach(route => {
+                additionalPagesContainer.appendChild(createLink(route));
+            });
+
+            // Productos (mostrar solo algunos como ejemplo)
+            if (siteRoutes.productPages.length > 0) {
+                const productsSection = document.createElement('div');
+                productsSection.className = 'sitemap-section';
+                productsSection.innerHTML = '<h3><i class="fa-solid fa-box"></i> Productos (Ejemplos)</h3>';
+                const productsContainer = document.createElement('div');
+                productsContainer.className = 'sitemap-links';
+                
+                // Mostrar solo los primeros 10 productos como ejemplo
+                siteRoutes.productPages.slice(0, 10).forEach(route => {
+                    productsContainer.appendChild(createLink(route));
+                });
+                
+                productsSection.appendChild(productsContainer);
+                document.querySelector('.sitemap-container').appendChild(productsSection);
+            }
+        }
+
+        // Ejecutar al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            // Cargar base de datos de productos primero
+            if (typeof PRODUCTS_DATABASE === 'undefined') {
+                // Si no está disponible, intentar cargar el script
+                const script = document.createElement('script');
+                script.src = 'js/products-data.js';
+                script.onload = function() {
+                    generateProductRoutes();
+                    renderRoutes();
+                };
+                document.head.appendChild(script);
+            } else {
+                generateProductRoutes();
+                renderRoutes();
+            }
+        });
+    </script>
+    <script>
+        CartSystem.updateCartUI();
+    </script>
+
+</body>
+
+</html>
+
+

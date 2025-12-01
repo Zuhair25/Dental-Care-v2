@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reseñas y Testimonios - Lo que dicen nuestros clientes sobre Dental Care.">
+    <title>Reseñas - Dental Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .header-short {
+            min-height: 40vh;
+            justify-content: center;
+        }
+
+        .header-short .header-content {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header header-short">
+        <div class="menu container">
+            <a href="index.html" class="Logo">Dental<span class="logo-bold">Care</span></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <i class="fa-solid fa-bars menu-icono"></i>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="carrito.html" class="cart-icon-header" style="position: relative; color: white; font-size: 1.5rem; margin-left: 20px; text-decoration: none;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-badge" class="cart-badge" style="display: none; position: absolute; top: -8px; right: -8px; background: var(--secondary-color); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 700;">0</span>
+            </a>
+        </div>
+        <div class="header-content container">
+            <h1>Reseñas y Testimonios</h1>
+            <p>Lo que dicen los profesionales sobre nosotros</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="reseñas-page" style="padding: 80px 0;">
+            <div class="reseñas-intro" style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;">Testimonios de Profesionales</h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 800px; margin: 0 auto;">
+                    Miles de odontólogos confían en Dental Care para sus materiales y equipos. Conoce sus experiencias 
+                    y por qué somos su proveedor de confianza.
+                </p>
+            </div>
+
+            <div class="reseñas-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="reseña-card-page" style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--shadow);">
+                    <div class="reseña-stars" style="color: #ffc107; margin-bottom: 20px; font-size: 1.2rem;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="reseña-text" style="color: #555; margin-bottom: 25px; line-height: 1.8; font-style: italic;">
+                        "Excelente calidad en todos los productos. El servicio es rápido y el asesoramiento profesional. 
+                        Llevo años trabajando con Dental Care y siempre superan mis expectativas. Los materiales de 
+                        odontología general son de primera calidad."
+                    </p>
+                    <div class="reseña-author" style="border-top: 1px solid #eee; padding-top: 20px;">
+                        <strong style="display: block; color: var(--text-color-dark); font-size: 1.1rem; margin-bottom: 5px;">Dr. Carlos Mendoza</strong>
+                        <span style="color: #666; font-size: 0.9rem;">Odontólogo General - Mendoza</span>
+                    </div>
+                </div>
+
+                <div class="reseña-card-page" style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--shadow);">
+                    <div class="reseña-stars" style="color: #ffc107; margin-bottom: 20px; font-size: 1.2rem;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="reseña-text" style="color: #555; margin-bottom: 25px; line-height: 1.8; font-style: italic;">
+                        "Los materiales de endodoncia que ofrecen son de primera calidad. Mis tratamientos han mejorado 
+                        significativamente desde que trabajo con ellos. El instrumental es preciso y duradero."
+                    </p>
+                    <div class="reseña-author" style="border-top: 1px solid #eee; padding-top: 20px;">
+                        <strong style="display: block; color: var(--text-color-dark); font-size: 1.1rem; margin-bottom: 5px;">Dra. Ana García</strong>
+                        <span style="color: #666; font-size: 0.9rem;">Endodoncista - Buenos Aires</span>
+                    </div>
+                </div>
+
+                <div class="reseña-card-page" style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--shadow);">
+                    <div class="reseña-stars" style="color: #ffc107; margin-bottom: 20px; font-size: 1.2rem;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="reseña-text" style="color: #555; margin-bottom: 25px; line-height: 1.8; font-style: italic;">
+                        "El instrumental que compré es excelente. Buena relación calidad-precio y entrega puntual. 
+                        Definitivamente recomiendo Dental Care. El equipo de atención al cliente es muy profesional."
+                    </p>
+                    <div class="reseña-author" style="border-top: 1px solid #eee; padding-top: 20px;">
+                        <strong style="display: block; color: var(--text-color-dark); font-size: 1.1rem; margin-bottom: 5px;">Dr. Roberto Silva</strong>
+                        <span style="color: #666; font-size: 0.9rem;">Cirujano Oral - Córdoba</span>
+                    </div>
+                </div>
+
+                <div class="reseña-card-page" style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--shadow);">
+                    <div class="reseña-stars" style="color: #ffc107; margin-bottom: 20px; font-size: 1.2rem;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="reseña-text" style="color: #555; margin-bottom: 25px; line-height: 1.8; font-style: italic;">
+                        "Equipamiento de última generación y atención personalizada. Han sido fundamentales en el 
+                        crecimiento de mi consultorio. Los sillones dentales que adquirí son cómodos y funcionales."
+                    </p>
+                    <div class="reseña-author" style="border-top: 1px solid #eee; padding-top: 20px;">
+                        <strong style="display: block; color: var(--text-color-dark); font-size: 1.1rem; margin-bottom: 5px;">Dra. María López</strong>
+                        <span style="color: #666; font-size: 0.9rem;">Ortodoncista - Rosario</span>
+                    </div>
+                </div>
+
+                <div class="reseña-card-page" style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--shadow);">
+                    <div class="reseña-stars" style="color: #ffc107; margin-bottom: 20px; font-size: 1.2rem;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="reseña-text" style="color: #555; margin-bottom: 25px; line-height: 1.8; font-style: italic;">
+                        "Los sistemas de implantes que ofrecen son excelentes. Buena osteointegración y resultados 
+                        predecibles. El soporte técnico es muy bueno y siempre están disponibles para resolver dudas."
+                    </p>
+                    <div class="reseña-author" style="border-top: 1px solid #eee; padding-top: 20px;">
+                        <strong style="display: block; color: var(--text-color-dark); font-size: 1.1rem; margin-bottom: 5px;">Dr. Javier Fernández</strong>
+                        <span style="color: #666; font-size: 0.9rem;">Implantólogo - La Plata</span>
+                    </div>
+                </div>
+
+                <div class="reseña-card-page" style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--shadow);">
+                    <div class="reseña-stars" style="color: #ffc107; margin-bottom: 20px; font-size: 1.2rem;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="reseña-text" style="color: #555; margin-bottom: 25px; line-height: 1.8; font-style: italic;">
+                        "Materiales de bioseguridad de excelente calidad. Cumplen con todas las normativas y me dan 
+                        la tranquilidad de trabajar con productos seguros. El servicio de entrega es muy eficiente."
+                    </p>
+                    <div class="reseña-author" style="border-top: 1px solid #eee; padding-top: 20px;">
+                        <strong style="display: block; color: var(--text-color-dark); font-size: 1.1rem; margin-bottom: 5px;">Dra. Patricia Martínez</strong>
+                        <span style="color: #666; font-size: 0.9rem;">Odontóloga General - San Juan</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 40px; background: var(--bg-light); border-radius: 20px;">
+                <h3 style="font-size: 1.8rem; color: var(--primary-color); margin-bottom: 20px;">¿Eres cliente nuestro?</h3>
+                <p style="color: #666; margin-bottom: 30px;">Comparte tu experiencia y ayuda a otros profesionales a conocer nuestros productos.</p>
+                <a href="contacto.html" class="btn-1">Enviar Reseña</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-col">
+                <h3>Dental<span class="logo-bold">Care</span></h3>
+                <p>Tu socio confiable en materiales odontológicos.</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/salomon.dental" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="navegacion.html">Mapa del Sitio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Mendoza,+Argentina" target="_blank"
+                            style="color: inherit;"><i class="fa-solid fa-location-dot"></i> Mendoza, Argentina</a></li>
+                    <li><a href="https://wa.me/5492617231291" target="_blank" style="color: inherit;"><i
+                                class="fa-brands fa-whatsapp"></i> +54 9 2617231291</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dental Care. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/cart-storage.js"></script>
+    <script src="js/cart-system.js"></script>
+    <script>
+        CartSystem.updateCartUI();
+    </script>
+
+</body>
+
+</html>
+
+
