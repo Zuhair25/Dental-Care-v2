@@ -21,7 +21,7 @@ function addPromotionBadge(productElement, promotion) {
     `;
     
     const imageWrapper = productElement.querySelector('.product-image-wrapper') || 
-                         productElement.querySelector('.product-card-catalog');
+                        productElement.querySelector('.product-card-catalog');
     if (imageWrapper) {
         imageWrapper.style.position = 'relative';
         imageWrapper.appendChild(badge);

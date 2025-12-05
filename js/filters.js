@@ -61,7 +61,7 @@ function createFiltersUI(containerId) {
                     <div class="filter-group">
                         <label for="filter-search" style="display: block; margin-bottom: 8px; font-weight: 500;">Buscar:</label>
                         <input type="text" id="filter-search" placeholder="Nombre, marca, descripción..." 
-                               style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px;">
+                            style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px;">
                     </div>
                     <div class="filter-group">
                         <label for="filter-category" style="display: block; margin-bottom: 8px; font-weight: 500;">Categoría:</label>
@@ -80,12 +80,12 @@ function createFiltersUI(containerId) {
                     <div class="filter-group">
                         <label for="filter-min-price" style="display: block; margin-bottom: 8px; font-weight: 500;">Precio Mín:</label>
                         <input type="number" id="filter-min-price" placeholder="20000" min="0" 
-                               style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px;">
+                            style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px;">
                     </div>
                     <div class="filter-group">
                         <label for="filter-max-price" style="display: block; margin-bottom: 8px; font-weight: 500;">Precio Máx:</label>
                         <input type="number" id="filter-max-price" placeholder="80000" min="0" 
-                               style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px;">
+                            style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px;">
                     </div>
                     <div class="filter-group">
                         <label for="filter-sort" style="display: block; margin-bottom: 8px; font-weight: 500;">Ordenar por:</label>

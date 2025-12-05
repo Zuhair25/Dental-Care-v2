@@ -21,7 +21,7 @@ function createProductCard(product, showAddToCart = true) {
         <div class="product-card-catalog" data-product-id="${product.id}" data-category="${product.category}">
             <div class="product-image-wrapper">
                 <img src="${imagePath}" alt="${product.name}" class="product-image" loading="lazy"
-                     onerror="this.src='images/i1.svg'">
+                    onerror="this.src='images/i1.svg'">
                 ${product.stock < 10 ? '<span class="stock-badge low-stock">Últimas unidades</span>' : ''}
             </div>
             <div class="product-info">

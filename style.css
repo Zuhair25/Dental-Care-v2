@@ -467,7 +467,31 @@ img {
 }
 
 /* --- Responsive Design --- */
-@media (max-width: 991px) {
+/* Fix for navbar overlap on smaller desktops (1025px - 1280px) */
+@media (min-width: 1025px) {
+
+    .menu-icono,
+    #menu {
+        display: none !important;
+    }
+
+    .menu .navbar {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 1024px) {
     .header {
         min-height: 60vh;
     }
@@ -795,7 +819,7 @@ img {
 }
 
 /* --- Responsive para nuevos componentes --- */
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .banner-swiper {
         height: 60vh;
         min-height: 500px;

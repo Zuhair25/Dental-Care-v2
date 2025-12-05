@@ -1152,7 +1152,7 @@ const PRODUCTS_DATABASE = {
             name: 'Implante de Titanio 3.5mm',
             description: 'Implante de titanio puro con superficie tratada. Diámetro 3.5mm. Longitud 10mm.',
             price: 75000,
-            image: 'i1.svg',
+            image: 'implant-placeholder.png',
             category: 'implantes',
             brand: 'Premium',
             stock: 8
@@ -1162,7 +1162,7 @@ const PRODUCTS_DATABASE = {
             name: 'Implante de Titanio 4.0mm',
             description: 'Implante de titanio puro. Diámetro 4.0mm. Longitud 10mm.',
             price: 78000,
-            image: 'i2.svg',
+            image: 'implant-placeholder.png',
             category: 'implantes',
             brand: 'Premium',
             stock: 7
@@ -1172,7 +1172,7 @@ const PRODUCTS_DATABASE = {
             name: 'Implante de Titanio 4.5mm',
             description: 'Implante de titanio puro. Diámetro 4.5mm. Longitud 11.5mm.',
             price: 80000,
-            image: 'i3.svg',
+            image: 'implant-placeholder.png',
             category: 'implantes',
             brand: 'Premium',
             stock: 6
@@ -1182,7 +1182,7 @@ const PRODUCTS_DATABASE = {
             name: 'Implante de Titanio 5.0mm',
             description: 'Implante de titanio puro. Diámetro 5.0mm. Longitud 11.5mm.',
             price: 82000,
-            image: 'i1.svg',
+            image: 'implant-placeholder.png',
             category: 'implantes',
             brand: 'Premium',
             stock: 5
@@ -1192,7 +1192,7 @@ const PRODUCTS_DATABASE = {
             name: 'Pilar Protésico Estándar',
             description: 'Pilar protésico estándar para restauraciones sobre implantes.',
             price: 45000,
-            image: 'i2.svg',
+            image: 'implant-placeholder.png',
             category: 'implantes',
             brand: 'Premium',
             stock: 12
@@ -1202,7 +1202,7 @@ const PRODUCTS_DATABASE = {
             name: 'Pilar Protésico Angulado',
             description: 'Pilar protésico angulado para corrección de angulación. 15° y 25°.',
             price: 52000,
-            image: 'i3.svg',
+            image: 'implant-placeholder.png',
             category: 'implantes',
             brand: 'Premium',
             stock: 10
@@ -1212,7 +1212,7 @@ const PRODUCTS_DATABASE = {
             name: 'Aditamento de Transferencia',
             description: 'Aditamento de transferencia para impresión sobre implantes.',
             price: 38000,
-            image: 'i1.svg',
+            image: 'implant-placeholder.png',
             category: 'implantes',
             brand: 'Premium',
             stock: 15
@@ -1222,7 +1222,7 @@ const PRODUCTS_DATABASE = {
             name: 'Aditamento de Curación',
             description: 'Aditamento de curación temporal para tejidos blandos.',
             price: 35000,
-            image: 'i2.svg',
+            image: 'implant-placeholder.png',
             category: 'implantes',
             brand: 'Premium',
             stock: 18
@@ -1232,7 +1232,7 @@ const PRODUCTS_DATABASE = {
             name: 'Fresa para Implantes',
             description: 'Fresas quirúrgicas para preparación de lecho de implante. Set completo.',
             price: 55000,
-            image: 'i3.svg',
+            image: 'implant-placeholder.png',
             category: 'implantes',
             brand: 'Premium',
             stock: 8
@@ -1242,7 +1242,7 @@ const PRODUCTS_DATABASE = {
             name: 'Porta Implante',
             description: 'Porta implante para colocación quirúrgica. Varios diámetros.',
             price: 42000,
-            image: 'i1.svg',
+            image: 'implant-placeholder.png',
             category: 'implantes',
             brand: 'Premium',
             stock: 10
@@ -1252,7 +1252,7 @@ const PRODUCTS_DATABASE = {
             name: 'Torquímetro para Implantes',
             description: 'Torquímetro digital para control de torque en implantes.',
             price: 48000,
-            image: 'i2.svg',
+            image: 'implant-placeholder.png',
             category: 'implantes',
             brand: 'Premium',
             stock: 9
@@ -1262,7 +1262,7 @@ const PRODUCTS_DATABASE = {
             name: 'Kit Quirúrgico de Implantes',
             description: 'Kit completo con todo el instrumental necesario para cirugía de implantes.',
             price: 65000,
-            image: 'i3.svg',
+            image: 'implant-placeholder.png',
             category: 'implantes',
             brand: 'Premium',
             stock: 6

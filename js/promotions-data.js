@@ -156,7 +156,7 @@ function applyDiscount(price, discount) {
 // Función para verificar si un producto tiene promoción
 function hasProductPromotion(productId, category) {
     const promotions = [];
-    
+
     // Verificar promoción por día
     const weekdayPromo = getActiveWeekdayPromotion();
     if (weekdayPromo && weekdayPromo.categories.includes(category)) {
@@ -166,7 +166,7 @@ function hasProductPromotion(productId, category) {
             name: weekdayPromo.name
         });
     }
-    
+
     // Verificar promoción por categoría
     const categoryPromo = getActiveCategoryPromotion();
     if (categoryPromo && categoryPromo.category === category) {
@@ -176,7 +176,7 @@ function hasProductPromotion(productId, category) {
             name: categoryPromo.name
         });
     }
-    
+
     return promotions;
 }
 
@@ -184,7 +184,7 @@ function hasProductPromotion(productId, category) {
 function calculateFinalPrice(product, paymentMethod = null) {
     let finalPrice = product.price;
     const appliedPromotions = [];
-    
+
     // Aplicar promociones de producto/categoría
     const productPromotions = hasProductPromotion(product.id, product.category);
     if (productPromotions.length > 0) {
@@ -193,7 +193,7 @@ function calculateFinalPrice(product, paymentMethod = null) {
         finalPrice = applyDiscount(finalPrice, maxDiscount);
         appliedPromotions.push(productPromotions.find(p => p.discount === maxDiscount));
     }
-    
+
     // Aplicar descuento por método de pago
     if (paymentMethod && PROMOTIONS_DATABASE.paymentMethodDiscounts[paymentMethod]) {
         const paymentDiscount = PROMOTIONS_DATABASE.paymentMethodDiscounts[paymentMethod];
@@ -204,7 +204,12 @@ function calculateFinalPrice(product, paymentMethod = null) {
             name: paymentDiscount.name
         });
     }
-    
+
+    // Clamp final price between 20,000 and 30,000 if promotions are applied
+    if (appliedPromotions.length > 0) {
+        finalPrice = Math.max(20000, Math.min(30000, finalPrice));
+    }
+
     return {
         originalPrice: product.price,
         finalPrice: Math.round(finalPrice),
@@ -223,10 +228,10 @@ function calculateComboPrice(combo) {
             total += product.price * item.quantity;
         }
     });
-    
+
     combo.originalPrice = total;
     combo.finalPrice = Math.round(applyDiscount(total, combo.discount));
-    
+
     return combo;
 }
 
